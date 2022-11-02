@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.oee.OEECalculation"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fab_oee"
+    android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/date_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_stroke"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/banar1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_calculator"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider"></View>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextViewBold
+                        android:id="@+id/fac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="-"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/banar11"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:tint="@color/colorAccent"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_person_purple"/>
+
+                        <customfonts.MyTextViewBold
+                            android:id="@+id/person"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/banar11"
+                            android:layout_marginTop="2dp"
+                            android:text="-"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/bana1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:padding="2dp"
+                            android:tint="@color/colorAccent"
+                            android:src="@drawable/ic_date_purple"/>
+
+                        <customfonts.MyTextViewRegular
+                            android:id="@+id/dates"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="-"
+                            android:textSize="@dimen/date" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ba1"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:padding="3dp"
+                        android:layout_marginRight="2dp"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_info"/>
+
+                    <customfonts.MyTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap the name input label to see variable information!"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp">
+
+                <customfonts.MyTextViewRegular
+                    android:id="@+id/eqnm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Equipment Name"
+                    android:textColor="@color/sub_text"
+                    android:padding="4dp"
+                    android:textSize="15sp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/eqipment_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Input equipment"
+                    android:textSize="13sp"
+                    app:met_iconLeft="@drawable/ic_machine"
+                    app:met_helperText="equipment or machine"
+                    app:met_iconPadding="0dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="5dp"
+                    android:layout_gravity="center">
+
+                    <customfonts.MyTextViewRegular
+                        android:id="@+id/otnm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="1"
+                        android:text="Operating Time"
+                        android:textColor="@color/sub_text"
+                        android:textSize="15sp" />
+
+                    <customfonts.MyTextViewRegular
+                        android:id="@+id/ttnm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total Time"
+                        android:textColor="@color/sub_text"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/operating_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Input time"
+                        android:textSize="13sp"
+                        android:inputType="numberDecimal"
+                        app:met_iconLeft="@drawable/ic_operating"
+                        app:met_iconPadding="0dp"
+                        app:met_helperText="hours" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/total_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Input total time"
+                        android:textSize="13sp"
+                        android:inputType="numberDecimal"
+                        app:met_iconLeft="@drawable/ic_time"
+                        app:met_iconPadding="0dp"
+                        app:met_helperText="hours" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="5dp"
+                    android:layout_gravity="center">
+
+                    <customfonts.MyTextViewRegular
+                        android:id="@+id/panm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Processed Amount"
+                        android:layout_marginRight="6dp"
+                        android:textColor="@color/sub_text"
+                        android:textSize="15sp" />
+
+                    <customfonts.MyTextViewRegular
+                        android:id="@+id/ictnm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ideal Cycle Time"
+                        android:textColor="@color/sub_text"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/processed_amount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Input amount"
+                        android:textSize="13sp"
+                        android:inputType="numberDecimal"
+                        app:met_iconLeft="@drawable/ic_proses"
+                        app:met_iconPadding="0dp"
+                        app:met_helperText="kilograms" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/ideal_cycle_time"
+                        android:layout_width="0dp"
+                        android:focusable="false"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Input ideal time"
+                        android:textSize="13sp"
+                        android:inputType="numberDecimal"
+                        app:met_iconLeft="@drawable/ic_cycle"
+                        app:met_iconPadding="0dp"
+                        app:met_helperText="kg/hours" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="5dp"
+                    android:layout_gravity="center">
+
+                    <customfonts.MyTextViewRegular
+                        android:id="@+id/gcnm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Good Count"
+                        android:layout_marginRight="6dp"
+                        android:textColor="@color/sub_text"
+                        android:textSize="15sp" />
+
+                    <customfonts.MyTextViewRegular
+                        android:id="@+id/tcnm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total Count"
+                        android:textColor="@color/sub_text"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/good_count"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Input count"
+                        android:textSize="13sp"
+                        android:inputType="numberDecimal"
+                        app:met_iconLeft="@drawable/ic_good"
+                        app:met_iconPadding="0dp"
+                        app:met_helperText="kilograms" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/total_count"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Input total count"
+                        android:textSize="13sp"
+                        android:inputType="numberDecimal"
+                        app:met_iconLeft="@drawable/ic_sum"
+                        app:met_iconPadding="0dp"
+                        app:met_helperText="kilograms" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="7dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/divider"/>
+
+                <customfonts.MyTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Result"
+                    android:textSize="14sp" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/divider"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/divider"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <LinearLayout
+                    android:id="@+id/list_projek_lap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Availability(%)"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp" />
+
+                    <customfonts.MyTextViewBold
+                        android:id="@+id/availability"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:id="@+id/list_projek_sur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Performance(%)"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp" />
+
+                    <customfonts.MyTextViewBold
+                        android:id="@+id/peformance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider"></View>
+
+                <LinearLayout
+                    android:id="@+id/list_projek_su"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Rate of Quality(%)"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13dp" />
+
+                    <customfonts.MyTextViewBold
+                        android:id="@+id/roq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/date_pre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_stroke"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/oee_img"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:tint="@color/colorPrimaryDark"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_oee"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider"></View>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextViewBold
+                        android:id="@+id/oee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="-"
+                        android:textSize="50dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>

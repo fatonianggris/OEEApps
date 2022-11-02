@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/export"
+        android:title="Export .xls"
+        android:orderInCategory="100"
+        android:actionLayout="@layout/list_history"/>
+    <item
+        android:id="@+id/share"
+        android:title="Share .xls"
+        android:orderInCategory="100"
+        android:actionLayout="@layout/list_history"
+        />
+    <item
+        android:id="@+id/delete"
+        android:title="Delete"
+        android:orderInCategory="100"
+        android:actionLayout="@layout/list_history"
+        />
+</menu>

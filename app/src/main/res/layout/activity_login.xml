@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <eightbitlab.com.blurview.BlurView
+            android:id="@+id/blurView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:blurOverlayColor="#10ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title"
+                        android:gravity="center"
+                        android:textSize="29dp"
+                        android:textColor="#fff"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="25dp"/>
+
+                    <ImageView
+                        android:id="@+id/imagelogo1"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_calculator" />
+
+                    <customfonts.MyTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info"
+                        android:paddingTop="10dp"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        android:textColor="#fff"
+                        android:layout_marginTop="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/rectangle">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ic_factory_white"/>
+
+                        <customfonts.MyEditText
+                            android:id="@+id/factory_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Factory name"
+                            android:inputType="text"
+                            android:textSize="14dp"
+                            android:padding="10dp"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:background="#00000000"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/rectangle">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ic_person"/>
+
+                        <customfonts.MyEditText
+                            android:id="@+id/person_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Officer name"
+                            android:inputType="text"
+                            android:textSize="14dp"
+                            android:padding="10dp"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:background="#00000000"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@drawable/rectangle">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ic_date"/>
+
+                        <customfonts.MyEditText
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusableInTouchMode="false"
+                            android:hint="Date"
+                            android:padding="10dp"
+                            android:textSize="14dp"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:background="#00000000"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/proceed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/rectangle2">
+
+                            <customfonts.MyTextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:padding="10dp"
+                                android:textSize="12dp"
+                                android:text="PROCEED"
+                                android:textColor="#ffff"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:padding="4dp"
+                            android:gravity="center"
+                            android:background="@drawable/rectangle1">
+
+                            <ImageView
+                                android:id="@+id/test_button_image"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_list">
+                            </ImageView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    </FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </eightbitlab.com.blurview.BlurView>
+
+    </LinearLayout>
+</ScrollView>

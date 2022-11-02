@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">OEE Calculation</string>
+    <string name="title">OEE Apps</string>
+    <string name="info"><i>Input your personal information</i></string>
+
+    <string name="EmptyTitlePlaceholder">Data Kosong</string>
+    <string name="EmptyContentPlaceholder">Silahkan untuk mengisi data terlebih dahulu</string>
+
+    <string name="about_us">
+        OEE Apps merupakan “alat ukur” untuk mengetahui sedekat apa proses produksi Anda dengan proses yang sempurna. Proses yang sempurna adalah proses yang hanya menghasilkan output yang baik, dalam waktu secepat mungkin, tanpa ada down time dalam memperbaiki produktifitas manufaktur.
+    </string>
+
+    <string name="eqnm_c">Mesin yang diukur</string>
+    <string name="otnm_c">Waktu mesin untuk beroperasi</string>
+    <string name="ttnm_c">Waktu maksimal yang dapat dicapai mesin</string>
+    <string name="panm_c">Jumlah bahan baku yang diproses</string>
+    <string name="ictnm_c">Waktu ideal mesin untuk menghasilkan produk</string>
+    <string name="gcnm_c">Jumlah produk baik</string>
+    <string name="tcnm_c">Jumlah total produk</string>
+
+    <string name="dnm_c">Persentase downtime mesin dari seluruh total downtime</string>
+    <string name="tdnm_c">Waktu berhenti mesin tetapi proses produksi masih dapat dilanjutkan</string>
+    <string name="pdnm_c">Downtime yang sudah direncanakan</string>
+    <string name="ltnm_c">Waktu antara start dan stop operasi mesin</string>
+    <string name="tdlnm_c">Waktu proses produksi berhenti total</string>
+    <string name="whnm_c">Persentase jam kerja mesin selama proses produksi</string>
+
+</resources>

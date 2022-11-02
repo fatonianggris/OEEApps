@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--#cc4A4A4A-->
+
+        <customfonts.MyTextViewBold
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:alpha="0.0"
+            android:text="OEE"
+            android:layout_gravity="center|top"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+        <ImageView
+            android:id="@+id/imagelogo2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:src="@drawable/ic_calcu" />
+
+        <ImageView
+            android:id="@+id/imagelogo1"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:src="@drawable/frame" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center|bottom">
+            <ProgressBar
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/progressBar"
+                android:layout_marginBottom="3dp"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/circular_screen" />
+
+            <customfonts.MyTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="1dp"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:text="Please wait..."/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
